@@ -72,7 +72,7 @@ async function loadData() {
     renderRows([]);
     showMessage(
       "Error loading data.\n\nWhat to check:\n" +
-      "1) The API route should be /api/getStudentCount\n" +
+      "1) The API route should be /api/final_count\n" +
       "2) Azure Function must be deployed (not 404)\n" +
       "3) SQL firewall must allow Azure services + your client IP\n\n" +
       `Details:\n${err.message}`
