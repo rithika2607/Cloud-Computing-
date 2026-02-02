@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Count by Country</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <h1>Student Count by Country</h1>
+      <p class="subtitle">Pulled live from Azure SQL using an Azure Function API.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <div class="toolbar">
+        <button id="refreshBtn" type="button">Refresh</button>
+        <span id="status" class="status">Idle</span>
+      </div>
+
+      <div id="message" class="message hidden"></div>
+
+      <div class="tableWrap">
+        <table id="studentTable">
+          <thead>
+            <tr>
+              <th>Country</th>
+              <th class="num">Student Count</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- rows injected -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
